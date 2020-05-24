@@ -28,7 +28,7 @@ def _deactivate(args):
 _deactivate(["nondestructive"])
 aliases["deactivate"] = _deactivate
 
-$VIRTUAL_ENV = r"/Users/jgrobler/Dev/personal_portfolio_project"
+$VIRTUAL_ENV = r"/Users/jgrobler/Documents/GitHub/web_development/personal_portfolio_project"
 
 $_OLD_VIRTUAL_PATH = $PATH
 $PATH = $PATH[:]

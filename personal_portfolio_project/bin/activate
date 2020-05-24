@@ -46,7 +46,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV='/Users/jgrobler/Dev/personal_portfolio_project'
+VIRTUAL_ENV='/Users/jgrobler/Documents/GitHub/web_development/personal_portfolio_project'
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
