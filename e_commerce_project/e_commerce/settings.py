@@ -38,6 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'store',
+    'stripe',
+    'crispy_forms',
 ]
 
 MIDDLEWARE = [
@@ -64,6 +66,7 @@ TEMPLATES = [
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
                 'store.context_processors.menu_links',
+                'store.context_processors.counter',
             ],
         },
     },
@@ -124,3 +127,7 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATICFILES = [os.path.join(BASE_DIR, 'static')]
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'static', 'media')
+STRIPE_PUBLISHABLE_KEY = 'pk_test_51GsLPAGwJw5E6lTSkiEN5ojGo7YwTiwKFEVVOUICUZCje4e2YxYDkR0MFf7KDqguGfP3xz3zJGMrKHOicou2C5jm00o307fTdT'
+STRIPE_SECRET_KEY = 'sk_test_51GsLPAGwJw5E6lTSZzwO4vGWRjPQGuwegSZ56qUvoebrg1EZLAdZFB7dBeZiWK1IWwOrIJdxJG1uOrsNijUHovVI00fOQt43i1'
+
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
